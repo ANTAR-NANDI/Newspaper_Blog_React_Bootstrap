@@ -1,5 +1,5 @@
 
-const Navbar = () => {
+const Navbar = ({search}) => {
   return (
     <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -19,7 +19,7 @@ const Navbar = () => {
     </div>
     <form className="d-flex" role="search">
       <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button className="btn btn-outline-success" type="submit">Search</button>
+      <button className="btn btn-outline-success" type="submit">{search}</button>
     </form>
     
   </div>
